@@ -1,0 +1,42 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <div id="joinGroup">
+                Join Group   <input type="text" id="groupInput" />
+                             <br />
+                User <input type="text" id="userInput" />
+               <input type="button" id="joingroupbtn" name="name" value="Join Group" />
+            </div>
+
+            
+            <br />
+            <div id="msgInput" style="display: none;">
+                <form action="">
+                    Message...<input type="text" id="messageInput" />
+                    <input type="submit" id="sendButton" value="Send Message" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
